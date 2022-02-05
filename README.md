@@ -21,8 +21,8 @@ A web application to analyze the work of the employee and predict his promotion 
 - Frontend : HTML,CSS 
 
 # Patners
- > [Gowsikkan](https://www.linkedin.com/in/gowsikkan/)
- > [Dharanish](https://www.linkedin.com/in/dharanish-s/)
+- [Gowsikkan](https://www.linkedin.com/in/gowsikkan/)
+- [Dharanish](https://www.linkedin.com/in/dharanish-s/)
 
 # Dataset 
 - You can download the dataset form [Kaggle](https://www.kaggle.com/arashnic/hr-ana?select=train.csv)
