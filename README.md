@@ -1,32 +1,33 @@
 # Project Name
 Employee-Promotion- Prediction 
 
-## Project Objective
+# Url
+[Run this app](https://employee-promotions-prediction.herokuapp.com/)
+
+# Project Objective
 A web application to analyze the work of the employee and predict his promotion status.
 
-### Methods Used
+# Methods Used
 
 - Inferential Statistics
 - Machine Learning
 - Data Visualization
 - Predictive Modeling
 
-### Technologies
-- Python 
-- HTML
-- CSS
-- Heruko
-- Pandas
-- Jupiter Notebook
+# Technologies
+- Python 3.8
+- Anaconda - Jupyter notebook
+- Backend api: Flask
+- Frontend : HTML,CSS 
 
-### Patners
+# Patners
  > [Gowsikkan](https://www.linkedin.com/in/gowsikkan/)
  > [Dharanish](https://www.linkedin.com/in/dharanish-s/)
 
-## Dataset 
+# Dataset 
 - You can download the dataset form [Kaggle](https://www.kaggle.com/arashnic/hr-ana?select=train.csv)
 
-## Attributes
+# Attributes
 - employee_id :	Unique ID for employee
 - department : Department of employee
 - region : Region of employment 
@@ -41,11 +42,26 @@ A web application to analyze the work of the employee and predict his promotion 
 - avg_training_score : Average of Scores taken in training peroid	
 - is_promoted : Whether the employee is promoted or not
 
-Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
-
-Install the dependencies and devDependencies and start the server.
 # Installation
  Use can Install the packages for this application using
 ```sh
     pip install -r requirements
 ```
+
+# Separate environment
+Create a viritual environment in order to avoid version errors between packages
+```
+pip install virtualenv
+```
+
+# Model Used 
+Random Forest Classifier 
+
+# Accuracy 
+The accuracy of the Model is 90%
+
+# Input
+Fill the Information about employee required by model in web app's UI
+
+# Output
+The model will predict whether the employee will be promoted or not and the result will be dispayed 
