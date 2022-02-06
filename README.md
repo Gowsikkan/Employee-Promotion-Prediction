@@ -1,8 +1,8 @@
 # Project Name
-Employee-Promotion- Prediction 
+Employee-Promotion-Prediction 
 
 # Url
-[Run this app](https://employee-promotions-prediction.herokuapp.com/)
+Run this [app](https://employee-promotions-prediction.herokuapp.com/)
 
 # Project Objective
 A web application to analyze the work of the employee and predict his promotion status.
@@ -45,20 +45,20 @@ A web application to analyze the work of the employee and predict his promotion 
 # Installation
  Use can Install the packages for this application using
 ```sh
-    pip install -r requirements
+pip install -r requirements
 ```
 
 # Separate environment
 Create a viritual environment in order to avoid version errors between packages
-```
+```sh
 pip install virtualenv
 ```
 
 # Model Used 
-Random Forest Classifier 
+XG Boost 
 
 # Accuracy 
-The accuracy of the Model is 90%
+The accuracy of the Model is 94%
 
 # Input
 Fill the Information about employee required by model in web app's UI
