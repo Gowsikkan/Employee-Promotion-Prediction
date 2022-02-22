@@ -1,30 +1,250 @@
+
+<!DOCTYPE html>
 <html>
-    <body bgcolor=#d4a3ae>
+<head>
+	<title></title>
+	<style type="text/css">
+	 *{
+	  margin: 0;
+	  padding: 0;
+      }
+	  body{
+	  	   background-image: url('https://images.unsplash.com/photo-1581309638082-877cb8132535?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wJTIwb24lMjB0YWJsZXxlbnwwfHwwfHw%3D&w=1000&q=80.jpg');
+         background-position: center;
+	  	   background-size:1950px;
+	  	   font-family: Copperplate, Papyrus, fantasy;
+         margin-top: 20px;
+        }
+        h1{
+          font-family: Copperplate, Papyrus, fantasy;
+        }
+   .regform{
+   	         width: 800px;
+   	         background-color: rgb(0,0,0,0.6);
+   	         margin: auto;
+   	         color: #FFFFFF;
+   	         padding: 10px 0px 10px 0px;
+   	         text-align: center;
+   	         border-radius: 15px 15px 0px 0px;
+           }
+   .main{
+  	    background-color: rgb(0,0,0,0.5);
+  	    width: 800px;
+  	    margin: auto;
+       }
+     form{
+     	  padding: 10px;
+     	 }
+  #name{
+  	    width: 100%;
+  	    height: 100px;
+  	   }
+  .name{
+  	    margin-left: 25px;
+  	    margin-top: 30px;
+  	    width: 125px;
+  	    color: white;
+  	    font-size: 18px;
+  	    font-weight: 700;
+       }
+  
+ .option{
+ 	     position:relative;
+  	     left: 200px;
+  	     top: -37px;
+  	     line-height: 40px;
+  	     width:532px;
+  	     height: 40px;
+  	     border-radius: 6px;
+  	     padding: 0 22px;
+  	     font-size: 16px;
+  	     color: #555;
+  	     outline: none;
+  	     overflow: hidden;
+        }
+  
+    button{
+    	   background-color: #3BAF9F;
+    	   display: block;
+    	   margin: 20px 0px 0px 20px;
+    	   text-align: center;
+    	   border-radius: 12px;
+    	   border: 2px solid #366473;
+    	   padding: 14px 110px;
+    	   outline: none;
+    	   color: white;
+    	   cursor: pointer;
+    	   transition: 0.25px;
+          }
+     button:hover{
+     	          background-color: #5390F5;
+                 }
+	</style>
+</head>
+<body>
+	<div class="regform"> <h1 > EMPLOYEE PROMOTION PREDICTION</h1></header></div>
+	<div class ="main">
+		<form method="POST" action="{{url_for('home')}}">
+      <h2 class="name"> Department </h2>
+      <select class="option" name="Department">
+      <option disabled="disabled" selected="selected">--Choose Option</option>
+      <option value=4> Operation</option>
+      <option value=7> Sales and Marketing</option>
+      <option value=8> Technology</option>
+      <option value=0> Analytics</option>  
+      <option value=5>Procurement</option>
+      <option value=1>Finance</option>
+      <option value=6>Research and Development</option>
+      <option value=2>HR</option>
+      <option value=3>Legal</option>
+      </select>
 
-        <center>
+      <h2 class="name"> Region </h2>
+      <select class="option" name="Region">
+      <option disabled="disabled" selected="selected">--Choose Option</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+      <option>11</option>
+      <option>12</option>
+      <option>13</option>
+      <option>14</option>
+      <option>15</option>
+      <option>16</option>
+      <option>17</option>
+      <option>18</option>
+      <option>19</option>
+      <option>20</option>
+      <option>21</option>
+      <option>22</option>
+      <option>23</option>
+      <option>24</option>
+      <option>25</option>
+      <option>26</option>
+      <option>27</option>
+      <option>28</option>
+      <option>29</option>
+      <option>30</option>
+      <option>31</option>
+      <option>32</option>
+      <option>33</option>
+      <option>34</option>
+      </select>
 
-        <h1> Employee promotion prediction </h1><br>
+      <h2 class="name"> Education</h2>
+      <select class="option" name="Education">
+      <option disabled="disabled" selected="selected">--Choose Option</option>
+      <option value=2> Master's</option>
+      <option value=0> Bachelor's</option>
+      <option value=1> Below Secondary</option>      
+      </select>
+       
 
-        <form method="POST", action="{{url_for('home')}}">
-           <b> First value :  <input type="Number", name='a', placeholder="enter 1"> <br><br>
-            Second value :  <input type="Number", name='b', placeholder="enter 2"> <br><br>
-            Third value :  <input type="Number", name='c', placeholder="enter 3"> <br><br>
-            Fourth value : <input type="Number ", name='d', placeholder="enter 4"> <br><br><br></b>
-            Five value : <input type="Number ", name='e', placeholder="enter 4"> <br><br><br></b>
-            Six value : <input type="Number ", name='f', placeholder="enter 4"> <br><br><br></b>
-            7 value : <input type="Number ", name='g', placeholder="enter 4"> <br><br><br></b>
-            8 value : <input type="Number ", name='h', placeholder="enter 4"> <br><br><br></b>
-            9 value : <input type="Number ", name='i', placeholder="enter 4"> <br><br><br></b>
-            10 value : <input type="Number ", name='j', placeholder="enter 4"> <br><br><br>
-            11 value : <input type="Number ", name='k', placeholder="enter 4"> <br><br><br></b>
+      <h2 class="name"> Gender </h2>
+      <select class="option" name="Gender">
+      <option disabled="disabled" selected="selected">--Choose Option</option>
+      <option value =1> Male</option>
+      <option value =0> Female</option>
+      </select>
 
 
-            <input type="submit" , value='predict!' >
-			 <br><br>
-       <p id="info"><b>{{data}}</b></p>
-        </form>
+      <h2 class="name"> Recuritment Channel </h2>
+      <select class="option" name="Recuritment">
+      <option disabled="disabled" selected="selected">--Choose Option</option>
+      <option value=2> Sourcing</option>
+      <option value =0> Others</option>
+      <option value =1> Referred</option>
+      </select>
 
-    </center>
 
-    </body>
+      <h2 class="name"> No. Of Tranings</h2>
+      <select class="option" name="Tranings">
+      <option disabled="disabled" selected="selected">--Choose Option</option>
+      <option> 0</option>
+      <option> 1</option>
+      <option> 2</option>
+      <option> 3</option>
+      <option> 4</option>
+      <option> 5</option>
+      <option> 6</option>
+      </select>
+
+   
+      <h2 class="name"> Age</h2>
+      <select class="option" name="Age">
+      <option disabled="disabled" selected="selected">--Choose Option</option>
+      <option> 21</option>
+      <option> 22</option>
+      <option> 23</option>
+      <option> 24</option>
+      <option> 25</option>
+      <option> 26</option>
+      <option> 27</option>
+      <option> 28</option>
+      <option> 29</option>
+      <option> 30</option>
+      <option> 31</option>
+      <option> 32</option>
+      <option> 33</option>
+      <option> 34</option>
+      <option> 35</option>
+      <option> 36</option>
+      <option> 37</option>
+      <option> 38</option>
+      </select>
+      
+      
+      <h2 class="name"> Previous Year Rating</h2>
+      <select class="option" name="Rating">
+      <option disabled="disabled" selected="selected">--Choose Option</option>
+      <option> 1</option>
+      <option> 2</option>
+      <option> 3</option>
+      <option> 4</option>
+      <option> 5</option>
+      </select>
+       
+      <h2 class="name"> Length of service</h2>
+      <select class="option" name="Length">
+      <option disabled="disabled" selected="selected">--Choose Option</option>
+      <option> 1</option>
+      <option> 2</option>
+      <option> 3</option>
+      <option> 4</option>
+      <option> 5</option>
+      </select>
+    
+      <h2 class="name"> Awards Won</h2>
+      <select class="option" name="Awards">
+      <option disabled="disabled" selected="selected">--Choose Option</option>
+      <option> 0</option>
+      <option> 1</option>
+      <option> 2</option>
+      <option> 3</option>
+      <option> 4</option>
+      <option> 5</option>
+      </select>
+
+      
+      <h2 class="name"> Average Traning Score</h2>
+      <select class="option" name="Traning Score">
+      <option disabled="disabled" selected="selected">--Choose Option</option>
+      <option> 1</option>
+      <option> 2</option>
+      <option> 3</option>
+      <option> 4</option>
+      <option> 5</option>
+      </select>
+       <center> <button type="submit">Predict</button>
+      </center>
+		</form>
+	</div>
+</body>
 </html>
