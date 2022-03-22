@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,8 +60,23 @@
   	     color: #555;
   	     outline: none;
   	     overflow: hidden;
+        } 
+
+  .optio{
+ 	     position:relative;
+  	     left: 200px;
+  	     top: -37px;
+  	     line-height: 40px;
+  	     width:480px;
+  	     height: 40px;
+  	     border-radius: 6px;
+  	     padding: 0 22px;
+  	     font-size: 16px;
+  	     color: #555;
+  	     outline: none;
+  	     overflow: hidden;
         }
-  
+        
     button{
     	   background-color: #3BAF9F;
     	   display: block;
@@ -99,44 +113,6 @@
       <option value=3>Legal</option>
       </select>
 
-      <h2 class="name"> Region </h2>
-      <select class="option" name="Region">
-      <option disabled="disabled" selected="selected">--Choose Option</option>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-      <option>6</option>
-      <option>7</option>
-      <option>8</option>
-      <option>9</option>
-      <option>10</option>
-      <option>11</option>
-      <option>12</option>
-      <option>13</option>
-      <option>14</option>
-      <option>15</option>
-      <option>16</option>
-      <option>17</option>
-      <option>18</option>
-      <option>19</option>
-      <option>20</option>
-      <option>21</option>
-      <option>22</option>
-      <option>23</option>
-      <option>24</option>
-      <option>25</option>
-      <option>26</option>
-      <option>27</option>
-      <option>28</option>
-      <option>29</option>
-      <option>30</option>
-      <option>31</option>
-      <option>32</option>
-      <option>33</option>
-      <option>34</option>
-      </select>
 
       <h2 class="name"> Education</h2>
       <select class="option" name="Education">
@@ -146,7 +122,6 @@
       <option value=1> Below Secondary</option>      
       </select>
        
-
       <h2 class="name"> Gender </h2>
       <select class="option" name="Gender">
       <option disabled="disabled" selected="selected">--Choose Option</option>
@@ -154,95 +129,25 @@
       <option value =0> Female</option>
       </select>
 
-
-      <h2 class="name"> Recuritment Channel </h2>
-      <select class="option" name="Recuritment">
-      <option disabled="disabled" selected="selected">--Choose Option</option>
-      <option value=2> Sourcing</option>
-      <option value =0> Others</option>
-      <option value =1> Referred</option>
-      </select>
-
-
       <h2 class="name"> No. Of Tranings</h2>
-      <select class="option" name="Tranings">
-      <option disabled="disabled" selected="selected">--Choose Option</option>
-      <option> 0</option>
-      <option> 1</option>
-      <option> 2</option>
-      <option> 3</option>
-      <option> 4</option>
-      <option> 5</option>
-      <option> 6</option>
-      </select>
-
+      <input class="optio" name="Tranings" placeholder="--Enter Value" type="text"> <br>
    
       <h2 class="name"> Age</h2>
-      <select class="option" name="Age">
-      <option disabled="disabled" selected="selected">--Choose Option</option>
-      <option> 21</option>
-      <option> 22</option>
-      <option> 23</option>
-      <option> 24</option>
-      <option> 25</option>
-      <option> 26</option>
-      <option> 27</option>
-      <option> 28</option>
-      <option> 29</option>
-      <option> 30</option>
-      <option> 31</option>
-      <option> 32</option>
-      <option> 33</option>
-      <option> 34</option>
-      <option> 35</option>
-      <option> 36</option>
-      <option> 37</option>
-      <option> 38</option>
-      </select>
-      
+      <input class="optio" name="Age" placeholder="--Enter Age" type="text"> <br>
       
       <h2 class="name"> Previous Year Rating</h2>
-      <select class="option" name="Rating">
-      <option disabled="disabled" selected="selected">--Choose Option</option>
-      <option> 1</option>
-      <option> 2</option>
-      <option> 3</option>
-      <option> 4</option>
-      <option> 5</option>
-      </select>
-       
-      <h2 class="name"> Length of service</h2>
-      <select class="option" name="Length">
-      <option disabled="disabled" selected="selected">--Choose Option</option>
-      <option> 1</option>
-      <option> 2</option>
-      <option> 3</option>
-      <option> 4</option>
-      <option> 5</option>
-      </select>
-    
-      <h2 class="name"> Awards Won</h2>
-      <select class="option" name="Awards">
-      <option disabled="disabled" selected="selected">--Choose Option</option>
-      <option> 0</option>
-      <option> 1</option>
-      <option> 2</option>
-      <option> 3</option>
-      <option> 4</option>
-      <option> 5</option>
-      </select>
+      <input class="optio" name="Rating" placeholder="--Enter Rating (1-5)" type="text"> <br>
 
+      <h2 class="name"> Length of service</h2>
+      <input class="optio" name="Length" placeholder="--Enter Value"type="text"> <br>
+
+      <h2 class="name"> Awards Won</h2>
+      <input class="optio" name="Awards" placeholder="--Enter Value" type="text"> <br>
       
       <h2 class="name"> Average Traning Score</h2>
-      <select class="option" name="Traning Score">
-      <option disabled="disabled" selected="selected">--Choose Option</option>
-      <option> 1</option>
-      <option> 2</option>
-      <option> 3</option>
-      <option> 4</option>
-      <option> 5</option>
-      </select>
-       <center> <button type="submit">Predict</button>
+      <input class="optio" name="Traning Score" placeholder="--Enter Score (1-99)" type="text"> <br>
+
+      <center> <button type="submit">Predict</button>
       </center>
 		</form>
 	</div>
