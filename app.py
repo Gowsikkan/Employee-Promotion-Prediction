@@ -12,7 +12,7 @@ def man():
 
 @app.route('/predict', methods=['POST'])
 def home():
-        print('helo')
+    
         data1 = int(request.form['Department'])
         data2 = int(request.form['Education'])
         data3 = int(request.form['Gender'])
