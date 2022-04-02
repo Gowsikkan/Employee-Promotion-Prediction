@@ -26,7 +26,7 @@ scipy==1.7.0
 seaborn==0.11.1
 six==1.16.0
 sklearn==0.0
-XGBOOST==1.0.2
+xgboost==1.0.2
 threadpoolctl==2.1.0
 toml==0.10.2
 Werkzeug==2.0.1
